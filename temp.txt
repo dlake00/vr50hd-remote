@@ -1,0 +1,25 @@
+
+    def mixer_status(i):
+        status = {
+            0: "CONNECTED",
+            1: "DISCONNECTED",
+            2: "MIXER ERR",
+            3: "SOCKET ERROR"
+        }
+        return status.get(i, "UNKNOWN ERR")
+
+    def mixer_input(i, j):
+        input = {
+            0: "Video 1",
+            1: "Video 2",
+            2: "Video 3",
+            3: "Video 4",
+            4: "Still 1",
+            5: "Still 2",
+            6: "Still 3",
+            7: "Still 4",
+            8: "PinP",
+            9: "PinP Key",
+            10: "Program"
+        }
+        return input.get(i, "INPUT ERR")
